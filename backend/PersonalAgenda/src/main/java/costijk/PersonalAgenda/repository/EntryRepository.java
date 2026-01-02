@@ -7,8 +7,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import java.util.Optional;
 
 public interface EntryRepository extends MongoRepository<Entry, String> {
-
-    Optional<Entry> findByIdAndUserId(String id, String userId);
-
     Page<Entry> findByUserId(String userId, Pageable pageable);
 }
