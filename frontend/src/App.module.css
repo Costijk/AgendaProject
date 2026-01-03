@@ -1,0 +1,67 @@
+.mainLayout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.contentArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #eee;
+  font-family: sans-serif;
+}
+
+.topBarButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.topBarButtons button {
+  padding: 8px 15px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.topBarButtons button:first-child {
+  background-color: #28a745;
+}
+
+.topBarButtons button:first-child:hover {
+  background-color: #218838;
+}
+
+.deleteBtn {
+  background-color: #dc3545 !important;
+}
+
+.deleteBtn:hover {
+  background-color: #c82333 !important;
+}
+
+.logoutBtn {
+  background-color: #6c757d !important;
+}
+
+.logoutBtn:hover {
+  background-color: #5a6268 !important;
+}
+
+.userEmail {
+  font-weight: 600;
+  color: #333;
+}

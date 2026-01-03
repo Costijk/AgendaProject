@@ -1,0 +1,33 @@
+.menuBar {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.menuBar button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.isActive {
+  background: #646cff !important;
+  color: white;
+}
+
+.editorWrapper {
+  border: 1px solid #ddd;
+  min-height: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #fff;
+}
+
+:global(.ProseMirror) {
+  outline: none;
+  min-height: 180px;
+}
